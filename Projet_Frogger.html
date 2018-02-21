@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8">
+		 <title>Frogger - Projet CMI info</title>
+		 <link type="text/css" rel="stylesheet" href="css/style.css">
+		 <script src="Projet_Frogger.js"></script>
+
+	</head>
+
+	
+
+	<body>
+	<header>
+	
+	</header>
+	<center>
+	<section id="jeuOFF">
+	<br> <br>
+	<br> <br><br> <br>
+		<button class="button" onclick="init(); document.getElementById('cvs').style.display='block'; document.querySelector('#audioPlayer');
+				document.getElementById('refresh').style.display='inline'; document.getElementById('jeuOFF').style.display='none'; document.getElementById('rejouer').style.display='inline'">Jouer</button>
+		<br> <br>
+		<button class="button"  onclick="document.getElementById('regle').style.display='block'; 
+				document.getElementById('retour').style.display='block'; document.getElementById('jeuOFF').style.display='none'">Règles</button>
+		<br> <br>
+		<button class="button" onclick="document.getElementById('controle').style.display='block'; 
+				document.getElementById('retour').style.display='block'; document.getElementById('jeuOFF').style.display='none'">Contrôles</button>
+		<br> <br>
+		<button class="button" onclick="document.getElementById('credits').style.display='block'; 
+				document.getElementById('retour').style.display='block'; document.getElementById('jeuOFF').style.display='none'">Crédits</button>
+		<br> <br>
+		
+		
+	</section>
+		<canvas id="cvs" width="704" height="896" style="margin: 10px auto; border: solid 2px #000; display: none"></canvas>
+	<section id="regle" style=" display: none">
+		<img src="image/carlWEB.png" alt="Règles du jeu" />
+	</section>
+	
+	
+	<section id="controle" style=" display: none">
+		<img src="image/rickWEB.png" alt="Contrôles" />
+	</section>
+	
+	
+	<section id="credits" style=" display: none">
+		<img src="image/neganWEB.png" alt="Crédits" />
+	</section>
+		<br> 
+	<audio id="audioPlayer">
+		<source src="song/TWDS.ogg">
+		<source src="song/TWDS.mp3">
+	</audio>
+
+		<button id="retour" class="button" style=" display: none" onclick="document.getElementById('cvs').style.display='none'; 
+				document.getElementById('retour').style.display='none'; document.getElementById('jeuOFF').style.display='inline'; document.getElementById('regle').style.display='none';
+						document.getElementById('controle').style.display='none'; document.getElementById('credits').style.display='none'; document.getElementById('rejouer').style.display='none'">Retour</button>
+						
+		<button id="refresh" class="button" style=" display: none" onclick="document.getElementById('cvs').style.display='none';document.location.reload(false);
+				document.getElementById('retour').style.display='none'; document.getElementById('jeuOFF').style.display='inline'; document.getElementById('regle').style.display='none';
+						document.getElementById('controle').style.display='none'; document.getElementById('credits').style.display='none'; document.getElementById('rejouer').style.display='none'">Retour</button>
+	</center>	
+
+	<audio src="song/TWDS.mp3" autoplay loop></audio>
+	</body>
+
+</html> 

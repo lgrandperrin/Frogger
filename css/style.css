@@ -1,0 +1,39 @@
+body {
+    background-image: url("../image/background.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+header {
+	margin: auto;
+	background-image: url("../image/ban.png");
+	width: 650px;
+	height: 201px;
+}
+canvas {
+            width: 25%;
+            height: 25%;
+        }
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D0312D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 200px;
+}
+
+.button:hover {background-color: #710C04}
+
+.button:active {
+  background-color: #710C04;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
